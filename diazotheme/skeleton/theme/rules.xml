@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xhtml="http://www.w3.org/1999/xhtml"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"    
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <notheme if="not(/html/body/div[@id='visual-portal-wrapper'])"/>
+  <theme href="/++framework++skeleton/index.html"/>
+
+  <!-- Head rules
+       ================================================================== -->
+  <xi:include href="/++framework++plone/rules/head/base.xml"/>
+  <xi:include href="/++framework++skeleton/rules/head.xml"/>
+  <after theme="/html/head/title">
+    <style>
+        #portal-logo { display: block; margin-bottom: 30px; opacity: .25; }
+        #portal-logo:hover { opacity: 1; }
+        .breadcrumbs { margin: 1em 0 2em; }
+        .tileItem { border-top: 1px solid rgb(221, 221, 221); margin-top: 60px; padding-top: 30px; }
+        .tileImage { float: right; }
+        header { padding: 60px 0 30px; overflow: hidden; }
+        article { padding: 0 0 60px; overflow: hidden; }
+        aside { padding: 60px 0; overflow: hidden; }
+        footer { padding: 30px 0 60px; overflow: hidden; }
+        footer, footer a { color: #999 !important; color: rgba(0,0,0,.35) !important; }
+        footer a:hover { color: #000 !important; }
+        img { max-width: 100%; height: auto; } 
+    </style>
+  </after> 
+
+  <!-- Body rules
+       ================================================================== -->
+
+  <xi:include href="/++framework++plone/rules/logo/black-192.xml"/>
+  <xi:include href="/++framework++plone/rules/utility/clean.xml"/>
+
+  <xi:include href="/++framework++skeleton/rules/structures.xml"/>
+  <xi:include href="/++framework++skeleton/rules/portlets.xml"/>
+
+  <!-- Place the content 
+       .................................................................. -->
+  <xi:include href="/++framework++plone/rules/content.xml"/>
+  
+</rules>
