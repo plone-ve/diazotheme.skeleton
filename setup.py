@@ -23,7 +23,7 @@ setup(name='diazotheme.skeleton',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'diazo.framework.skeleton',
+          'diazoframework.skeleton',
       ],
       entry_points="""
       [z3c.autoinclude.plugin]
