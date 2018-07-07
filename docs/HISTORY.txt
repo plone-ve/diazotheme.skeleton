@@ -4,6 +4,8 @@ Changelog
 1.0dev (unreleased)
 -------------------
 
+- Added more strings classifiers items for the metadata package [macagua]
+
 - Updated the diazo manifest preview file for 'Skeleton Theme' [macagua]
 
 - Updated the title and description for diazo manifest files [macagua]
