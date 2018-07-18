@@ -150,25 +150,39 @@ Resources
 This package is the parent of all Plone diazo themes and 
 provides rule that are practical to use in other diazo themes.
 
-The resources of this framework can be reached through
 
-- **Skeleton Starter Theme**
+Skeleton Starter Theme
+----------------------
+
+The resources of this theme can be reached through
+
     ``/++theme++skeleton-starter``
-- **Skeleton Theme**
-    ``/++theme++skeleton``
 
-There are placed at ``diazotheme.skeleton/diazotheme/skeleton/`` directory 
-with following resources files:
+There are placed at ``diazotheme.skeleton/diazotheme/skeleton/starter`` 
+directory with following resources files:
 
 ::
 
     _ starter
-      Provides the resources from *Skeleton Starter Theme*.
+      Provides the resources from "Skeleton Starter Theme".
       _ manifest.cfg
       _ rules.xml
-    
+
+
+Skeleton Theme
+--------------
+
+The resources of this theme can be reached through
+
+    ``/++theme++skeleton``
+
+There are placed at ``diazotheme.skeleton/diazotheme/skeleton/theme`` 
+directory with following resources files:
+
+::
+
     _ theme
-      Provides the resources from *Skeleton Theme*.
+      Provides the resources from "Skeleton Theme".
       _ manifest.cfg
       _ preview.png
       _ rules.xml
